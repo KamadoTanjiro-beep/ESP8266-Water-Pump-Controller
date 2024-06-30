@@ -13,8 +13,8 @@
 7. DC Jacks, wires etc.
 
 
-## FEATURES V1.0.0
-Coming Soon
+## FEATURES V1.0.1
+1. Added music as ending tone
 
    
 ## UPCOMING FEATURES
