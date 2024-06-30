@@ -18,7 +18,7 @@
 
    
 ## UPCOMING FEATURES
-- Check ![Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues) 
+- Check [Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues) 
 
 
 ## Picture(s)
