@@ -14,13 +14,15 @@
 
 
 ## FEATURES V1.0.0
+Coming Soon
 
    
 ## UPCOMING FEATURES
+Coming Soon
 
 
 ## Picture(s)
-
+Coming Soon
 ![Controller]()
 
 
