@@ -1,9 +1,11 @@
 
 # ESP8266 based AC 220V 50Hz Water Pump Controller
 
+## ALERT: This is a high-voltage high-ampere operation based project which deals with AC 220V and Amperes upto 5A-20A.
+
 ## Hardware
 1. D1 Mini V2 NodeMcu 4M Bytes
-2. SSR-40DA Solid State Relay Module 3-32VDC/24-380VAC 40A
+2. SSR-40DA Solid State Relay Module 3-32VDC/24-380VAC 40A (Choose a relay with 10 times more current rating than your pumps nomral current rating)
 3. Piezo Electronic Buzzer Beep Alarm Bell Continuous Sound 3v-24v Buzzer Electromagnetic
 4. 2 Colour LED
 5. One Push Button
