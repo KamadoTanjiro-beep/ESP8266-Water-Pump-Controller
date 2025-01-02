@@ -15,8 +15,10 @@
 - Check [Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues) 
 
 ## PICTURE(s)
-<img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x1.jpg" width="800" height="600" alt="Circuit Setup">
-<img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x2.jpg" width="800" height="600" alt="Complete Setup">
+<p float="left">
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x1.jpg" width="400" height="533" alt="Circuit Setup" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x2.jpg" width="400" height="533" alt="Complete Setup"/>
+</p>
 
 ## CONNECTIONS
 I can help describe the schematic connections based on the code. Here's a text-based representation of how the components should be connected:
