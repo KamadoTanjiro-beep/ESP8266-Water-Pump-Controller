@@ -15,8 +15,8 @@
 - Check [Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues) 
 
 ## PICTURE(s)
-Coming Soon
-![Controller]()
+<img src="assets/circuit.jpg" width="800" height="600" alt="Circuit Setup">
+<img src="assets/setup.jpg" width="800" height="600" alt="Complete Setup">
 
 ## CONNECTIONS
 I can help describe the schematic connections based on the code. Here's a text-based representation of how the components should be connected:
@@ -59,6 +59,8 @@ Important Safety Notes:
 4. Ensure proper heatsinking for the SSR
 5. Use appropriate gauge wires for the current ratings
 
+* When using NC (Normally Closed) mode, the pump controller will use the relay to cut off power from the pump by switching from NC to NO (Normally Open). During pump startup, it draws up to 10 times more current which may cause arcs when the relay closes. In theory, if the pump is connected to NC and power is supplied, there won't be any arcs since the relay is already closed. We will use the relay only to disconnect the pump by switching it to NO mode and then turning the Main Switch OFF (It is important to use a main switch to turn the whole system off once your purpose is complete).
+
 ## FEATURES V1.0.2
 1. Removed music as ending tone
 2. Added BC547 transistor to drive the buzzer directly via 5V power for louder alerts
@@ -68,8 +70,6 @@ Important Safety Notes:
 
 ## FEATURES V1.0.1
 1. Added music as ending tone
-
-* When using NC (Normally Closed) mode, the pump controller will use the relay to cut off power from the pump by switching from NC to NO (Normally Open). During pump startup, it draws up to 10 times more current which may cause arcs when the relay closes. In theory, if the pump is connected to NC and power is supplied, there won't be any arcs since the relay is already closed. We will use the relay only to disconnect the pump by switching it to NO mode and then turning the Main Switch OFF (It is important to use a main switch to turn the whole system off once your purpose is complete).
 
 ## License
 Feel free to distribute this project but please link back to this repository. You can show your support by adding attributions, good words, or donating (PayPal link in profile). Please note that you use this at your own risk - I take no responsibility if this device causes any damage or malfunction. This project is not meant for 24/7 operation. Please turn off the system when your work is done - by turning off the system, I mean cutting off all power when not in use.
