@@ -78,12 +78,12 @@ I can help describe the schematic connections based on the code. Here's a text-b
    - Signal pin to GPIO4 (D4)
    - GND to GND <br>
    ```diff
-   **if using Mechanical Relay (Connected to D4/GPIO4)**
+   If using Mechanical Relay (Connected to D4/GPIO4)
    - Signal pin to GPIO4 (D4)
    - VCC to 5V
    - GND to GND
    ```
-   
+
 2. **Buzzer with BC547 (Connected to D5/GPIO5)**
    - BC547 Base -> 1K resistor -> GPIO5 (D5)
    - BC547 Collector -> Buzzer negative
