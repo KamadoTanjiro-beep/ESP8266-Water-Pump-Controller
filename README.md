@@ -156,7 +156,6 @@ This project is available under permissive terms. Users must:
 > **⚠️ Disclaimer**: This is a DIY project. Use at your own risk. Not meant for 24/7 operation.
 
 ## 🤝 Support
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-donate-yellow.svg)](YOUR_DONATION_LINK)
 - 🐛 [Report Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues)
 - 📢 [Project Updates](https://github.com/desiFish/ESP8266-Water-Pump-Controller)
 
