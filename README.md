@@ -16,8 +16,16 @@
 
 ## PICTURE(s)
 <p float="left">
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x1.jpg" width="400" height="533" alt="Circuit Setup" style="margin-right: 10px"/>
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x2.jpg" width="400" height="533" alt="Complete Setup"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x1.jpg" width="200" height="267" alt="Circuit Setup" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x2.jpg" width="200" height="267" alt="Complete Setup" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x3.jpg" width="200" height="267" alt="Description 3" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x4.jpg" width="200" height="267" alt="Description 4"/>
+</p>
+<p float="left" style="margin-top: 10px">
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x5.jpg" width="200" height="267" alt="Description 5" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x6.jpg" width="200" height="267" alt="Description 6" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x7.jpg" width="200" height="267" alt="Description 7" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x8.jpg" width="200" height="267" alt="Description 8"/>
 </p>
 
 ## CONNECTIONS
