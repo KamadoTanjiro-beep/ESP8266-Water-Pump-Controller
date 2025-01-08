@@ -1,24 +1,35 @@
-# ESP8266 based AC 220V 50Hz Water Pump Controller
+# 💧 ESP8266 based AC 220V 50Hz Water Pump Controller
 
-⚠️ **SAFETY WARNING**: This project involves high-voltage operations (AC 220V-240V) and high currents (5A-50A). Improper handling can be fatal. Professional electrical expertise is required.
+<div align="center">
 
-## Table of Contents
-- [Hardware Requirements](#hardware-requirements)
-- [Features](#features)
-- [Setup Instructions](#setup-instructions)
-- [Connections](#connections)
-- [Safety Guidelines](#safety-guidelines)
-- [Gallery](#gallery)
-- [Version History](#version-history)
-- [License](#license)
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/desiFish/ESP8266-Water-Pump-Controller.svg)](https://github.com/desiFish/ESP8266-Water-Pump-Controller/issues)
 
-## Hardware Requirements
+</div>
+
+## ⚠️ SAFETY WARNING
+> **DANGER**: This project involves high-voltage operations (AC 220V-240V) and high currents (5A-50A).
+> 
+> ☠️ **Improper handling can be fatal. Professional electrical expertise is required.**
+
+## 📑 Table of Contents
+- [🛠️ Hardware Requirements](#hardware-requirements)
+- [✨ Features](#features)
+- [📝 Setup Instructions](#setup-instructions)
+- [🔌 Connections](#connections)
+- [⚡ Safety Guidelines](#safety-guidelines)
+- [📸 Gallery](#gallery)
+- [📜 Version History](#version-history)
+- [⚖️ License](#license)
+
+## 🛠️ Hardware Requirements
 ### Required Components
-1. D1 Mini V2 NodeMcu 4M Bytes
-2. Relay Options:
+1. 🔲 D1 Mini V2 NodeMcu 4M Bytes
+2. ⚡ Relay Options:
    - **High-End**: SSR-100DA Solid State Relay (3-32VDC/24-380VAC 100A)
    - **Budget**: 30A Mechanical Relay Module (NC Mode)
-   > Note: Choose a relay with 10x higher current rating than your pump's normal current
+   > 💡 Note: Choose a relay with 10x higher current rating than your pump's normal current
 3. Piezo Electronic Buzzer (3v-24v)
 4. WS2812B RGB LED
 5. Push Button
@@ -29,27 +40,36 @@
 - 2-way 3-pole Mini Toggle Switch
 - Additional DC Jack and wiring
 
-## Setup Instructions
-1. **Hardware Assembly**
-   - Follow the [Connections](#connections) section for wiring
-   - Ensure proper isolation between high and low voltage circuits
-   - Install system in a waterproof enclosure
+## 🚀 Setup Instructions
+<details>
+<summary>1. 🔧 Hardware Assembly</summary>
 
-2. **Software Setup**
-   - Update WiFi credentials in code
-   - Upload code via Arduino IDE
-   - Test system with low voltage first
+- Follow the [Connections](#connections) section for wiring
+- Ensure proper isolation between high and low voltage circuits
+- Install system in a waterproof enclosure
+</details>
 
-## Features
+<details>
+<summary>2. 💻 Software Setup</summary>
 
-### Current Version (V1.0.2)
-- BC547 transistor integration for louder buzzer alerts
-- WiFi/OTA activation via boot-time button press
-- Pump toggle via button press during operation
-- Improved safety features
-- Hardware-based tank level monitoring
+- Update WiFi credentials in code
+- Upload code via Arduino IDE
+- Test system with low voltage first
+</details>
 
-## CONNECTIONS
+## ✨ Features
+### Current Version (V1.0.2) 🎉
+```diff
++ BC547 transistor integration for louder buzzer alerts
++ WiFi/OTA activation via boot-time button press
++ Pump toggle via button press during operation
++ Improved safety features
++ Hardware-based tank level monitoring
+```
+
+## 🔌 Connections
+Proper schematics will be added soon.
+
 I can help describe the schematic connections based on the code. Here's a text-based representation of how the components should be connected:
 
 ### ESP8266 (D1 Mini) Connections:
@@ -83,18 +103,18 @@ I can help describe the schematic connections based on the code. Here's a text-b
    - VCC to 3.3V
    - GND to GND
 
-## Safety Guidelines
-⚠️ **CRITICAL SAFETY REQUIREMENTS**
-1. Professional installation required for high-voltage connections
-2. Use appropriate isolation between circuits
-3. Install proper fusing and circuit protection
-4. Use heatsink for SSR installation
-5. Use appropriately rated wiring
-6. Install system in waterproof enclosure
-7. Add emergency cutoff switch
-8. Regular maintenance checks required
+## ⚡ Safety Guidelines
+### 🚨 CRITICAL SAFETY REQUIREMENTS
+1. 👨‍🔧 Professional installation required for high-voltage connections
+2. 🔒 Use appropriate isolation between circuits
+3. 🛡️ Install proper fusing and circuit protection
+4. ❄️ Use heatsink for SSR installation
+5. 🔌 Use appropriately rated wiring
+6. 💧 Install system in waterproof enclosure
+7. 🔴 Add emergency cutoff switch
+8. ⚡ Regular maintenance checks required
 
-## GALLERY
+## 📸 Gallery
 <p float="left">
   <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x1.jpg" width="200" height="267" alt="Circuit Setup" style="margin-right: 10px"/>
   <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x2.jpg" width="200" height="267" alt="Complete Setup" style="margin-right: 10px"/>
@@ -108,28 +128,38 @@ I can help describe the schematic connections based on the code. Here's a text-b
   <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x8.jpg" width="200" height="267" alt="Description 8"/>
 </p>
 
-## Version History
-```
-V1.0.2 - Current stable release
-- Removed music tone
-- Added BC547 transistor circuit
-- Added WiFi/OTA support
-- Added pump toggle feature
+## 📜 Version History
+<details>
+<summary>View Version History</summary>
 
-V1.0.1 - Initial release
-- Basic pump control
-- Music ending tone
-```
+```diff
++ V1.0.2 - Current stable release
+  - Removed music tone
+  - Added BC547 transistor circuit
+  - Added WiFi/OTA support
+  - Added pump toggle feature
 
-## License
+! V1.0.1 - Initial release
+  - Basic pump control
+  - Music ending tone
+```
+</details>
+
+## ⚖️ License
 This project is available under permissive terms. Users must:
-- Attribute the original project
-- Take full responsibility for implementation
-- Not use for commercial purposes without permission
+- 🔗 Attribute the original project
+- ⚠️ Take full responsibility for implementation
+- 🚫 Not use for commercial purposes without permission
 
-**Disclaimer**: This is a DIY project. Use at your own risk. Not meant for 24/7 operation.
+> **⚠️ Disclaimer**: This is a DIY project. Use at your own risk. Not meant for 24/7 operation.
 
-## Support
-- [Report Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues)
-- [Project Updates](https://github.com/desiFish/ESP8266-Water-Pump-Controller)
+## 🤝 Support
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-donate-yellow.svg)](YOUR_DONATION_LINK)
+- 🐛 [Report Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues)
+- 📢 [Project Updates](https://github.com/desiFish/ESP8266-Water-Pump-Controller)
+
+---
+<div align="center">
+Made with ❤️ by <a href="https://github.com/desiFish">desiFish</a>
+</div>
 
