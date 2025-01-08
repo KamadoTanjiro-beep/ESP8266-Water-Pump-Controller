@@ -4,8 +4,8 @@
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![License](https://img.shields.io/github/license/desiFish/ESP8266-Water-Pump-Controller)](/LICENSE)
-[![GitHub Issues](https://img.shields.io/github/issues/desiFish/ESP8266-Water-Pump-Controller.svg)](/issues)
-[![Release](https://img.shields.io/github/v/release/desiFish/ESP8266-Water-Pump-Controller)](/releases)
+[![GitHub Issues](https://img.shields.io/github/issues/desiFish/ESP8266-Water-Pump-Controller.svg)](https://github.com/desiFish/ESP8266-Water-Pump-Controller/issues)
+[![Release](https://img.shields.io/github/v/release/desiFish/ESP8266-Water-Pump-Controller)](https://github.com/desiFish/ESP8266-Water-Pump-Controller/releases)
 
 </div>
 
@@ -149,12 +149,24 @@ I can help describe the schematic connections based on the code. Here's a text-b
 </details>
 
 ## ⚖️ License
-This project is available under permissive terms. Users must:
-- 🔗 Attribute the original project
-- ⚠️ Take full responsibility for implementation
-- 🚫 Not use for commercial purposes without permission
+This project is licensed under GNU GPL v3. You are free to:
+- 🔄 Use, modify, and distribute the code
+- 🔧 Use the code commercially
+- 📄 Patent use
 
-> **⚠️ Disclaimer**: This is a DIY project. Use at your own risk. Not meant for 24/7 operation.
+Under the following conditions:
+- 📝 Source code must be made available when distributing
+- 📋 A copy of the license and copyright notice must be included
+- 🔄 Modifications must be released under the same license
+- 📜 Changes made to the code must be documented
+
+> **⚠️ Disclaimer**: This is a DIY project involving high voltage electricity. 
+> - No warranty is provided
+> - Use at your own risk
+> - Not meant for 24/7 operation
+> - Authors are not liable for any damages or injuries
+
+For more details, see the [GNU GPL v3 License](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## 🤝 Support
 - 🐛 [Report Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues)
