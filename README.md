@@ -3,8 +3,9 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-[![GitHub Issues](https://img.shields.io/github/issues/desiFish/ESP8266-Water-Pump-Controller.svg)](https://github.com/desiFish/ESP8266-Water-Pump-Controller/issues)
+[![License](https://img.shields.io/github/license/desiFish/ESP8266-Water-Pump-Controller)](/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/desiFish/ESP8266-Water-Pump-Controller.svg)](/issues)
+[![Release](https://img.shields.io/github/v/release/desiFish/ESP8266-Water-Pump-Controller)](/releases)
 
 </div>
 
