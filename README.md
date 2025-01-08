@@ -76,7 +76,7 @@ I can help describe the schematic connections based on the code. Here's a text-b
 
 1. **SSR (Connected to D4/GPIO4)** 
    - Signal pin to GPIO4 (D4)
-   - GND to GND
+   - GND to GND <br>
    **if using Mechanical Relay (Connected to D4/GPIO4)**
    - Signal pin to GPIO4 (D4)
    - VCC to 5V
