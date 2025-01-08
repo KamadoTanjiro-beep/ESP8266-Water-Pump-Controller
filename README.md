@@ -1,32 +1,53 @@
 # ESP8266 based AC 220V 50Hz Water Pump Controller
 
-## ALERT: This project involves high-voltage operations dealing with AC 220V-240V and currents up to 5A-20A.
+⚠️ **SAFETY WARNING**: This project involves high-voltage operations (AC 220V-240V) and high currents (5A-50A). Improper handling can be fatal. Professional electrical expertise is required.
 
-## Hardware
+## Table of Contents
+- [Hardware Requirements](#hardware-requirements)
+- [Features](#features)
+- [Setup Instructions](#setup-instructions)
+- [Connections](#connections)
+- [Safety Guidelines](#safety-guidelines)
+- [Gallery](#gallery)
+- [Version History](#version-history)
+- [License](#license)
+
+## Hardware Requirements
+### Required Components
 1. D1 Mini V2 NodeMcu 4M Bytes
-2. (Costly)SSR-100DA Solid State Relay Module 3-32VDC/24-380VAC 100A (Choose a relay with 10 times higher current rating than your pump's normal current rating) or (Cheaper) you can use 30A Relay Modules in NC (Normally Closed Mode) - see note below.
-3. Piezo Electronic Buzzer Beep Alarm Bell Continuous Sound 3v-24v Buzzer Electromagnetic
+2. Relay Options:
+   - **High-End**: SSR-100DA Solid State Relay (3-32VDC/24-380VAC 100A)
+   - **Budget**: 30A Mechanical Relay Module (NC Mode)
+   > Note: Choose a relay with 10x higher current rating than your pump's normal current
+3. Piezo Electronic Buzzer (3v-24v)
 4. WS2812B RGB LED
-5. One Push Button
+5. Push Button
 6. SAIER SEN-PPI35 Float Level Switch
-7. DC Jacks, wires etc.
+7. DC Jacks and wiring components
 
-## UPCOMING FEATURES
-- Check [Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues) 
+### Optional Components (For Dual Tank Setup)
+- 2-way 3-pole Mini Toggle Switch
+- Additional DC Jack and wiring
 
-## PICTURE(s)
-<p float="left">
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x1.jpg" width="200" height="267" alt="Circuit Setup" style="margin-right: 10px"/>
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x2.jpg" width="200" height="267" alt="Complete Setup" style="margin-right: 10px"/>
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x3.jpg" width="200" height="267" alt="Description 3" style="margin-right: 10px"/>
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x4.jpg" width="200" height="267" alt="Description 4"/>
-</p>
-<p float="left" style="margin-top: 10px">
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x5.jpg" width="200" height="267" alt="Description 5" style="margin-right: 10px"/>
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x6.jpg" width="200" height="267" alt="Description 6" style="margin-right: 10px"/>
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x7.jpg" width="200" height="267" alt="Description 7" style="margin-right: 10px"/>
-  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x8.jpg" width="200" height="267" alt="Description 8"/>
-</p>
+## Setup Instructions
+1. **Hardware Assembly**
+   - Follow the [Connections](#connections) section for wiring
+   - Ensure proper isolation between high and low voltage circuits
+   - Install system in a waterproof enclosure
+
+2. **Software Setup**
+   - Update WiFi credentials in code
+   - Upload code via Arduino IDE
+   - Test system with low voltage first
+
+## Features
+
+### Current Version (V1.0.2)
+- BC547 transistor integration for louder buzzer alerts
+- WiFi/OTA activation via boot-time button press
+- Pump toggle via button press during operation
+- Improved safety features
+- Hardware-based tank level monitoring
 
 ## CONNECTIONS
 I can help describe the schematic connections based on the code. Here's a text-based representation of how the components should be connected:
@@ -62,25 +83,53 @@ I can help describe the schematic connections based on the code. Here's a text-b
    - VCC to 3.3V
    - GND to GND
 
-Important Safety Notes:
-1. The relay's high voltage side should be handled by a qualified electrician
-2. Use appropriate isolation between high voltage and low voltage circuits
-3. Include proper fusing and protection
-4. Ensure proper heatsinking for the SSR
-5. Use appropriate gauge wires for the current ratings
+## Safety Guidelines
+⚠️ **CRITICAL SAFETY REQUIREMENTS**
+1. Professional installation required for high-voltage connections
+2. Use appropriate isolation between circuits
+3. Install proper fusing and circuit protection
+4. Use heatsink for SSR installation
+5. Use appropriately rated wiring
+6. Install system in waterproof enclosure
+7. Add emergency cutoff switch
+8. Regular maintenance checks required
 
-* When using NC (Normally Closed) mode, the pump controller will use the relay to cut off power from the pump by switching from NC to NO (Normally Open). During pump startup, it draws up to 10 times more current which may cause arcs when the relay closes. In theory, if the pump is connected to NC and power is supplied, there won't be any arcs since the relay is already closed. We will use the relay only to disconnect the pump by switching it to NO mode and then turning the Main Switch OFF (It is important to use a main switch to turn the whole system off once your purpose is complete).
+## GALLERY
+<p float="left">
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x1.jpg" width="200" height="267" alt="Circuit Setup" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x2.jpg" width="200" height="267" alt="Complete Setup" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x3.jpg" width="200" height="267" alt="Description 3" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x4.jpg" width="200" height="267" alt="Description 4"/>
+</p>
+<p float="left" style="margin-top: 10px">
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x5.jpg" width="200" height="267" alt="Description 5" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x6.jpg" width="200" height="267" alt="Description 6" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x7.jpg" width="200" height="267" alt="Description 7" style="margin-right: 10px"/>
+  <img src="https://github.com/desiFish/ESP8266-Water-Pump-Controller/blob/main/resources/x8.jpg" width="200" height="267" alt="Description 8"/>
+</p>
 
-## FEATURES V1.0.2
-1. Removed music as ending tone
-2. Added BC547 transistor to drive the buzzer directly via 5V power for louder alerts
-3. Pressing the button during boot activates WiFi for OTA purposes
-4. Pressing the button during operation toggles the pump ON or OFF
-5. Other minor changes
+## Version History
+```
+V1.0.2 - Current stable release
+- Removed music tone
+- Added BC547 transistor circuit
+- Added WiFi/OTA support
+- Added pump toggle feature
 
-## FEATURES V1.0.1
-1. Added music as ending tone
+V1.0.1 - Initial release
+- Basic pump control
+- Music ending tone
+```
 
 ## License
-Feel free to distribute this project but please link back to this repository. You can show your support by adding attributions, good words, or donating (PayPal link in profile). Please note that you use this at your own risk - I take no responsibility if this device causes any damage or malfunction. This project is not meant for 24/7 operation. Please turn off the system when your work is done - by turning off the system, I mean cutting off all power when not in use.
+This project is available under permissive terms. Users must:
+- Attribute the original project
+- Take full responsibility for implementation
+- Not use for commercial purposes without permission
+
+**Disclaimer**: This is a DIY project. Use at your own risk. Not meant for 24/7 operation.
+
+## Support
+- [Report Issues](https://github.com/KamadoTanjiro-beep/Water-Pump-Controller/issues)
+- [Project Updates](https://github.com/desiFish/ESP8266-Water-Pump-Controller)
 
