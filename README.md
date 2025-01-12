@@ -14,16 +14,6 @@
 > 
 > ☠️ **Improper handling can be fatal. Professional electrical expertise is required.**
 
-## 📑 Table of Contents
-- [🛠️ Hardware Requirements](#hardware-requirements)
-- [✨ Features](#features)
-- [📝 Setup Instructions](#setup-instructions)
-- [🔌 Connections](#connections)
-- [⚡ Safety Guidelines](#safety-guidelines)
-- [📸 Gallery](#gallery)
-- [📜 Version History](#version-history)
-- [⚖️ License](#license)
-
 ## 🛠️ Hardware Requirements
 ### Required Components
 1. 🔲 D1 Mini V2 NodeMcu 4M Bytes
